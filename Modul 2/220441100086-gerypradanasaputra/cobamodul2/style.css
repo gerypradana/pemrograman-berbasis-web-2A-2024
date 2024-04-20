@@ -1,0 +1,58 @@
+body {
+  background-image: url(gambarkayu.jpeg);
+  background-repeat:no-repeat ;
+  background-size: 100%;
+  font-family: 'Times New Roman';
+  margin: 0;
+  padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  header {
+    background-color: #b97008;
+    color: #ffffff97;
+    padding: 1px;
+    text-align: center;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+  }
+  
+  .item {
+    padding: 15px;
+    border: 3px solid #ea6619;
+    border-radius: 10px;
+  }
+  
+  .item img {
+    width: 100px;
+    height: 90px;
+  }
+  
+  .item h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .item p {
+    margin-bottom: 10px;
+  }
+  
+  .item .harga {
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color:#b97008;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

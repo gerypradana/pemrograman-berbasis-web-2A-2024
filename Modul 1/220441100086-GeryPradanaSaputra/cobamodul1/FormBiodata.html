@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Biodata</title>
+<style>
+    body {
+        background: url(gambar\ bagus.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 100px;
+    }
+
+    form {
+        position:absolute; top: 14%; left:35%;
+        width: 400px;
+        padding: 20px;
+        border: 3px solid #d08822;
+    }
+
+    label {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%; 
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .radio-group {
+        display: flex;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button[type="submit"] {
+        background-color: #007bff;
+    }
+
+    button[type="reset"] {
+        background-color: #dc3545;
+    }
+</style>
+</head>
+<body>
+    <h1 align="center">Form Biodata</h1>
+    <a style="position: absolute; top: 10%; left: 35%;" href="biodatadiri.html">Biodata Diri</a>
+    <a style="position: absolute; top: 10%; right: 36%;" href="TabelPraktikan.html">Tabel Praktikan Praktikum</a>
+    <form >
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama">
+        <label for="nim">NIM:</label>
+        <input type="number" id="nim" name="nim">
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="5" cols="53"></textarea>
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+        <label for="pendidikan">Pendidikan Terakhir:</label>
+        <select id="pendidikan" name="pendidikan">
+            <option value="">Pilih Pendidikan</option>
+            <option value="SMA">SMA</option>
+            <option value="D3">SMP</option>
+            <option value="S1">SD</option>
+            <option value="S2">MI</option>
+        </select><br>
+        <label for="angkatan">Angkatan:</label>
+        <input type="number" id="angkatan" name="angkatan">
+        <label for="hobi">Hobi:</label>
+        <input type="text" id="hobi" name="hobi">
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <div class="radio-group">
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki">
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
